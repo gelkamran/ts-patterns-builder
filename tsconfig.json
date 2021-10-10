@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "useUnknownInCatchVariables": false
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
