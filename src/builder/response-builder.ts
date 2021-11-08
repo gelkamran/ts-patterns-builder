@@ -81,7 +81,7 @@ export default class ResponseBuilder implements Builder<CustomResponse> {
         /** Adding some validation */
         if (((this._status < 200 || this._status >= 400) && this._ok) ||
             ((this._status >= 200 && this._status) < 400 && !this._ok)) {
-            throw new Error(`Reponse 'ok' property (${this._ok}) and status code (${this._status}) doesn't match`);
+            throw new Error(`Response 'ok' property (${this._ok}) and status code (${this._status}) doesn't match`);
         }
 
         return {
